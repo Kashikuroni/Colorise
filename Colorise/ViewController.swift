@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         colorPreview.layer.cornerRadius = 20
         
         redSlider.minimumTrackTintColor = .red
