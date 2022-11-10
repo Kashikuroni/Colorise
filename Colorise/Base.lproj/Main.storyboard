@@ -71,19 +71,19 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hf0-zX-LiI">
                                         <rect key="frame" x="-2" y="0.0" width="263" height="31"/>
                                         <connections>
-                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="ZXL-wz-26t"/>
+                                            <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="GNa-dk-7cG"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="alx-OM-N2L">
                                         <rect key="frame" x="-2" y="50" width="263" height="31"/>
                                         <connections>
-                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="vbC-as-zyw"/>
+                                            <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="XjI-Wo-hYu"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kMh-iS-Oq4">
                                         <rect key="frame" x="-2" y="100" width="263" height="31"/>
                                         <connections>
-                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="lnk-va-xTp"/>
+                                            <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="47Q-AJ-0oc"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -107,13 +107,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueLabel" destination="lLQ-8B-nwQ" id="lql-6u-m8O"/>
                         <outlet property="blueSlider" destination="kMh-iS-Oq4" id="x49-7Z-O89"/>
-                        <outlet property="blueValue" destination="lLQ-8B-nwQ" id="lql-6u-m8O"/>
                         <outlet property="colorPreview" destination="9kI-i6-Mv6" id="XUj-mV-svw"/>
+                        <outlet property="greenLabel" destination="FHo-i8-0HW" id="j5S-QE-6Kw"/>
                         <outlet property="greenSlider" destination="alx-OM-N2L" id="PKY-kD-fK3"/>
-                        <outlet property="greenValue" destination="FHo-i8-0HW" id="j5S-QE-6Kw"/>
+                        <outlet property="redLabel" destination="roZ-qH-GlY" id="KS9-8a-oJ6"/>
                         <outlet property="redSlider" destination="Hf0-zX-LiI" id="o0y-VM-mqz"/>
-                        <outlet property="redValue" destination="roZ-qH-GlY" id="KS9-8a-oJ6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
